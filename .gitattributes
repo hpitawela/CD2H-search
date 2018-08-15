@@ -1,1 +1,30 @@
 * text=auto !eol
+/.classpath -text svneol=unset#application/xml
+/.project -text svneol=unset#application/xml
+.settings/.jsdtscope -text svneol=unset#application/xml
+.settings/org.eclipse.core.resources.prefs -text
+.settings/org.eclipse.jdt.core.prefs -text
+.settings/org.eclipse.m2e.core.prefs -text
+.settings/org.eclipse.wst.common.component -text svneol=unset#application/xml
+.settings/org.eclipse.wst.common.project.facet.core.xml -text svneol=unset#application/xml
+.settings/org.eclipse.wst.jsdt.ui.superType.container -text
+.settings/org.eclipse.wst.jsdt.ui.superType.name -text
+.settings/org.eclipse.wst.validation.prefs -text
+WebContent/META-INF/MANIFEST.MF -text
+WebContent/WEB-INF/web.xml -text svneol=unset#application/xml
+WebContent/cd2h -text
+WebContent/footer.jsp -text
+WebContent/header.jsp -text
+WebContent/images/cd2h_honeycomb.png -text svneol=unset#image/png
+WebContent/images/ctsa-g-logo.jpg -text svneol=unset#image/jpeg
+WebContent/images/masthead-divider.png -text svneol=unset#image/png
+WebContent/images/masthead-hhs-logo.png -text svneol=unset#image/png
+WebContent/images/masthead-nih-logo.png -text svneol=unset#image/png
+WebContent/images/onlinelogomaker-111617-1142-7717.png -text svneol=unset#image/png
+WebContent/index.jsp -text
+WebContent/resources/cd2h -text
+WebContent/resources/css -text
+WebContent/resources/slick.min.css -text
+WebContent/resources/style.css -text
+WebContent/resources/styles.css -text
+/pom.xml -text
