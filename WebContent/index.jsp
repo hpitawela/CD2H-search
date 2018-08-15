@@ -1,23 +1,72 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql"%>
+<%@ taglib prefix="util" uri="http://icts.uiowa.edu/tagUtil"%>
+
+<%@include file="statisticsLoad.jsp"%>
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-    <meta charset="UTF-8">
-    <title>CD2Hsearch</title>
-<style type="text/css" media="all">
-@import "resources/style.css";
-</style>
-</head>
+<jsp:include page="head.jsp" flush="true">
+	<jsp:param name="title" value="CTSAsearch" />
+</jsp:include>
 
 <body class="home page-template-default page page-id-6 CD2H">
-<jsp:include page="header.jsp" flush="true" />
+<script type="text/javascript">
+	var pressed = false;
+	
+	function alterAction() {
+		if (pressed)
+			document.queryForm.action= 'visualSearch.jsp';
+		else
+			document.queryForm.action = 'textSearch.jsp';
+		return true;
+	}
+</script>
+		<jsp:include page="header.jsp" flush="true" />
+
+<div class="container-fluid">
 
 
-<p>CTSAsearch is a federated search engine using Linked Open Data published by members of the CTSA Consortium and other interested parties.
-To try it out, use the form below or click on the "CTSA Search" entry in the menu on the left to see a ranked list of matching investigators.
-Check the "Display Map" box or click on the "CTSA Map" entry in the menu to visualize coauthorship amongst the matching investigators.</p>
-        
-<jsp:include page="footer.jsp" flush="true" />
- 
+		<p>CTSAsearch is a federated search engine using Linked Open Data
+			published by members of the CTSA Consortium and other interested
+			parties. To try it out, use the form below.</p>
+
+<c:set var="displayMode" value="bar"/>
+<c:if test="${not empty param.mode}">
+	<c:set var="displayMode" value="${param.mode}"/>	
+</c:if>
+
+<h2>What is CTSAsearch?</h2>
+
+
+<h2>Search for Investigators at ${count_institutions} Institutions</h2>
+<form name="queryForm" method='POST' onsubmit="return alterAction();">
+	<input type="hidden" name="detectionAlg" value="site" />
+	<table border="0">
+		<tr>
+			<td>
+				<fieldset><legend>Visualize?</legend>
+				<input type="checkbox" id="checker" name="checker" onclick="pressed = !pressed;" /> Display graph&nbsp;&nbsp;&nbsp;
+				</fieldset>
+			</td>
+			<td>
+				<fieldset><legend>Handling of query terms?</legend>
+				<input type="radio" name="mode" value="text"> Text only<br>
+				<input type="radio" name="mode" value="concept" checked> UMLS concepts (including support for boolean search using &amp;,|, and !)
+				</fieldset>
+			</td>
+		</tr>
+		<tr>
+			<td colspan=2>
+				<fieldset><legend>Query?</legend>
+				<input name="query" value="${param.query}" size=50> <input type=submit name=submitButton value=Search>
+				</fieldset>
+			</td>
+		</tr>
+	</table>
+</form>
+			</div>
+		<jsp:include page="footer.jsp" flush="true" />
 </body>
 
 </html>

@@ -3,6 +3,24 @@
         <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="GraphTagLib-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/GraphTagLib/GraphTagLib">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="FederationTagLib-0.0.3-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/FederationTagLib/FederationTagLib">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="LuceneTagLib-0.0.8-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/LuceneTagLib/LuceneTagLib">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="RDFTagLib-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/RDFTagLib/RDFTagLib">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="NLP-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/NLP/NLP">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="GoogleSearchTagLib-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/GoogleSearchTagLib/GoogleSearchTagLib">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="CD2H-search"/>
         <property name="java-output-path" value="/CD2H-search/build/classes"/>
     </wb-module>

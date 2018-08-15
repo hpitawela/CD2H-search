@@ -12,9 +12,10 @@
 .settings/org.eclipse.wst.validation.prefs -text
 WebContent/META-INF/MANIFEST.MF -text
 WebContent/WEB-INF/web.xml -text svneol=unset#application/xml
-WebContent/cd2h -text
 WebContent/footer.jsp -text
+WebContent/head.jsp -text
 WebContent/header.jsp -text
+WebContent/images/bullet-l1.gif -text svneol=unset#image/gif
 WebContent/images/cd2h_honeycomb.png -text svneol=unset#image/png
 WebContent/images/ctsa-g-logo.jpg -text svneol=unset#image/jpeg
 WebContent/images/masthead-divider.png -text svneol=unset#image/png
@@ -24,7 +25,11 @@ WebContent/images/onlinelogomaker-111617-1142-7717.png -text svneol=unset#image/
 WebContent/index.jsp -text
 WebContent/resources/cd2h -text
 WebContent/resources/css -text
+WebContent/resources/jdbc_environment.jsp -text
+WebContent/resources/layout.css -text
 WebContent/resources/slick.min.css -text
 WebContent/resources/style.css -text
 WebContent/resources/styles.css -text
+WebContent/statisticsLoad.jsp -text
+WebContent/textSearch.jsp -text
 /pom.xml -text

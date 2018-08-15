@@ -1,0 +1,159 @@
+/* 
+ICTS Template
+*/
+body, img, h1, h2, h3, h4, h5, h6, ul, li, p, a, form {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+body {
+    background-color:white;
+	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+	font-size: .85em;
+	line-height: 1.5em;
+	color: #000000;
+}
+h2 {
+	border-bottom: 1px dotted #666666;
+	font-family: Georgia,"Times New Roman",Times,serif;
+	margin: 20px 0;
+	font-size: 1.25em;
+}
+p {
+	padding: 0 30px 10px 0;
+}
+a {
+	color: #B08200;
+}
+a:hover {
+	background-color: #EAEAEA;
+}
+
+/* Lists */
+.bulletedList {
+	list-style-image: url(../images/bullet-l1.gif);
+}
+.bulletedList li ul {
+	list-style-image: none;
+}
+
+#roof {
+	background: #000000 url(../images/bg-top.png) repeat-x;
+	height: 24px;
+	text-align: right;
+	padding-right: 75px;
+	margin: 0 auto;
+}
+#roof a {
+	margin: 0 auto;
+}
+#roof a:hover {
+	background: none;
+}
+
+#banner {
+    color:#B20838;
+    text-align:left;
+    padding: 20px 20px 0px 10px;
+}
+#banner_1 {
+    font-family:"Lucida Sans Unicode";
+	font-weight:bold;
+	font-size:32pt;
+}
+#banner_2 {
+    font-family:"Wide Latin";
+	font-size:24pt;
+}
+#menu {
+    color:white;
+    width:180px;
+    padding: 0px 20px 0px 0px;
+    float:left;
+    clear:left;
+	height=100%;
+	font-size: .90em;
+}
+#menu h3 {
+	color: #444444;
+	font-size: 1.1em;
+	border-bottom: 3px solid #E0AA00;
+	text-align: right;
+}
+#menu ul {
+	list-style-type: none;
+	margin-bottom: 2em;
+	line-height: 1.2em;
+}
+#menu a {
+	border-bottom: 1px dotted #cccccc;
+	display: block;
+	color: #333333;
+	text-decoration: none;
+	padding: 5px 0 3px 15px;
+	text-indent: -5px;
+}
+#menu address {
+	padding: 10px 0 0 10px;
+	line-height: 1.5em;
+}
+#wrapper {
+    margin-left:200px;
+    padding:0px 0px 0px 0px;
+}
+#content {
+	font-size: .90em;
+}
+#result {
+    padding:20px 20px 20px 20px;
+}
+#result th {
+	background-color: #eeeeee;
+	font-size: .95em;
+	line-height: 1.5em;
+}
+#result td {
+	background-color: #eeeeee;
+	font-size: .95em;
+	line-height: 1.5em;
+}
+#footer {
+    text-align:center;
+    width=100%;
+    padding:20px 0px 0px 0px;
+}
+
+/************************/
+/* Multipurpose Classes */
+/************************/
+.left {
+	float: left;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.clear {
+	clear: both;
+}
+/* Table */
+
+table {
+}
+
+table th {
+	font-size: .95em;
+	line-height: 1.5em;
+}
+table td {
+	font-size: .95em;
+	line-height: 1.5em;
+	color: #000000;
+}
+table a {
+	color: #CC9900;
+}
+
+/*this is to keep page from shifting to left on load in safari and firefox*/
+
+html { min-height: 100%; margin-bottom: 1px; }
+
+html { overflow: -moz-scrollbars-vertical !important; }

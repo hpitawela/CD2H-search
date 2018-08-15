@@ -16,19 +16,19 @@
 			itemtype="https://www.schema.org/SiteNavigationElement"
 			id="menu-item-991"
 			class="menu-item menu-item-type-custom menu-item-object-custom menu-item-991 nav-item"><a
-			title="PRIVACY ACT" href="https://ncats.nih.gov/privacy"
-			class="nav-link">PRIVACY ACT</a></li>
+			title="CTSA" href="https://ctsa.ncats.nih.gov"
+			class="nav-link">CTSA</a></li>
 		<li itemscope="itemscope"
 			itemtype="https://www.schema.org/SiteNavigationElement"
 			id="menu-item-994"
 			class="menu-item menu-item-type-custom menu-item-object-custom menu-item-994 nav-item"><a
-			title="ACCESSIBILITY" href="https://ncats.nih.gov/accessibility"
-			class="nav-link">ACCESSIBILITY</a></li>
+			title="CD2H" href="https://ctsa.ncats.nih.gov/cd2h/"
+			class="nav-link">CD2H</a></li>
 		<li itemscope="itemscope"
 			itemtype="https://www.schema.org/SiteNavigationElement"
 			id="menu-item-997"
 			class="menu-item menu-item-type-custom menu-item-object-custom menu-item-997 nav-item"><a
-			title="DISCLAIMER" href="https://ncats.nih.gov/disclaimer"
-			class="nav-link">DISCLAIMER</a></li>
+			title="CD2H Labs" href="https://ctsa.ncats.nih.gov/cd2h/cd2h-labs/"
+			class="nav-link">CD2H Labs</a></li>
 	</ul>
 </footer>
