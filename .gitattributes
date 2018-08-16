@@ -13,6 +13,7 @@
 WebContent/META-INF/MANIFEST.MF -text
 WebContent/WEB-INF/web.xml -text svneol=unset#application/xml
 WebContent/footer.jsp -text
+WebContent/graphs/forceGraph.jsp -text
 WebContent/head.jsp -text
 WebContent/header.jsp -text
 WebContent/images/bullet-l1.gif -text svneol=unset#image/gif
@@ -25,6 +26,7 @@ WebContent/images/onlinelogomaker-111617-1142-7717.png -text svneol=unset#image/
 WebContent/index.jsp -text
 WebContent/resources/cd2h -text
 WebContent/resources/css -text
+WebContent/resources/d3.v3.min.js -text
 WebContent/resources/jdbc_environment.jsp -text
 WebContent/resources/layout.css -text
 WebContent/resources/slick.min.css -text
@@ -32,4 +34,6 @@ WebContent/resources/style.css -text
 WebContent/resources/styles.css -text
 WebContent/statisticsLoad.jsp -text
 WebContent/textSearch.jsp -text
+WebContent/visualSearch.jsp -text
+WebContent/visualSearchData.jsp -text
 /pom.xml -text
