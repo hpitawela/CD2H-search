@@ -26,6 +26,8 @@
 
 <div class="container-fluid">
 
+<h2>What is CTSAsearch?</h2>
+
 
 		<p>CTSAsearch is a federated search engine using Linked Open Data
 			published by members of the CTSA Consortium and other interested
@@ -35,8 +37,6 @@
 <c:if test="${not empty param.mode}">
 	<c:set var="displayMode" value="${param.mode}"/>	
 </c:if>
-
-<h2>What is CTSAsearch?</h2>
 
 
 <h2>Search for Investigators at ${count_institutions} Institutions</h2>
@@ -51,8 +51,8 @@
 			</td>
 			<td>
 				<fieldset><legend>Handling of query terms?</legend>
-				<input type="radio" name="mode" value="text"> Text only<br>
-				<input type="radio" name="mode" value="concept" checked> UMLS concepts (including support for boolean search using &amp;,|, and !)
+				<input type="radio" name="mode" value="text" checked> Text only<br>
+				<input type="radio" name="mode" value="concept"> UMLS concepts (including support for boolean search using &amp;,|, and !)
 				</fieldset>
 			</td>
 		</tr>
