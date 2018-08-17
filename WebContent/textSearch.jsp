@@ -100,28 +100,9 @@
 						</ol>
 					</c:when>
 					<c:when test="${param.mode == 'concept'}">
-						<c:set var="rewrittenQuery"
-							value="${fn:replace(param.query,'(', ' ( ')}" />
-						<c:set var="rewrittenQuery"
-							value="${fn:replace(rewrittenQuery,')', ' ) ')}" />
-						<c:set var="rewrittenQuery"
-							value="${fn:replace(rewrittenQuery,'&', ' & ')}" />
-						<c:set var="rewrittenQuery"
-							value="${fn:replace(rewrittenQuery,'|', ' | ')}" />
-						<c:set var="rewrittenQuery"
-							value="${fn:replace(rewrittenQuery,'!', ' ! ')}" />
-						<h3>UMLS concepts recognized in your query:</h3>
-						<ol class="bulletedList">
-							<rdf:foreachConcept var="x" queryString="${rewrittenQuery}">
-								<rdf:concept>
-									<li><a
-										href="ctsaSearch.jsp?query=<rdf:conceptCUI/>&mode=concept"><rdf:conceptCUI /></a>
-										- <rdf:conceptPhrase />
-								</rdf:concept>
-							</rdf:foreachConcept>
-						</ol>
-						<c:set var="queryString" value="${param.query}" scope="session" />
-						<c:set var="displayString" value="${param.query}" />
+						<jsp:include page="conceptHierarchy.jsp" flush="true">
+							<jsp:param name="target_page" value="textSearch.jsp" />
+						</jsp:include>
 					</c:when>
 					<c:otherwise>
 						<c:set var="queryString" value="${param.query}" />
