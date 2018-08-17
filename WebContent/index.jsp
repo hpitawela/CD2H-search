@@ -9,6 +9,9 @@
 <jsp:include page="head.jsp" flush="true">
 	<jsp:param name="title" value="CTSAsearch" />
 </jsp:include>
+<style type="text/css" media="all">
+@import "resources/layout.css";
+</style>
 
 <body class="home page-template-default page page-id-6 CD2H">
 <script type="text/javascript">

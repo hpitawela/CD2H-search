@@ -19,27 +19,25 @@
 		<rdf:concept>
 			<c:set var="concept"><rdf:conceptPhrase /></c:set>
 			<c:set var="cui"><rdf:conceptCUI /></c:set>
-			<li><a
-				href="${param.target_page}?mode=concept&query=${fn:replace(fn:replace(param.query,'&','%26'), concept, cui)}${query_suffix}"><rdf:conceptCUI /></a>
-				- <rdf:conceptPhrase />
-				<ol class="bulletedList">
-					<li>Super concepts:
-						<ol class="bulletedList">
-							<rdf:foreachSuperconcept var="">
-								<c:set var="supercui"><rdf:superconceptCUI /></c:set>
-								<li><a href="${param.target_page}?mode=concept&query=${fn:replace(fn:replace(fn:replace(param.query,'&','%26'), concept, supercui), cui, supercui)}${query_suffix}"><rdf:superconceptCUI /></a> - <rdf:superconceptPhrase />
-							</rdf:foreachSuperconcept>
-						</ol>
-					</li>
-					<li>Sub concepts:
-						<ol class="bulletedList">
-							<rdf:foreachSubconcept var="">
-								<c:set var="subcui"><rdf:subconceptCUI /></c:set>
-								<li><a href="${param.target_page}?mode=concept&query=${fn:replace(fn:replace(fn:replace(param.query,'&','%26'), concept, subcui), cui, subcui)}${query_suffix}"><rdf:subconceptCUI /></a> - <rdf:subconceptPhrase />
-							</rdf:foreachSubconcept>
-						</ol>
-					</li>
-				</ol>
+			<li><a href="${param.target_page}?mode=concept&query=${fn:replace(fn:replace(param.query,'&','%26'), concept, cui)}${query_suffix}"><rdf:conceptCUI /></a>	- <rdf:conceptPhrase />
+			<ol class="bulletedList">
+				<li>Super concepts:
+					<ol class="bulletedList">
+						<rdf:foreachSuperconcept var="">
+							<c:set var="supercui"><rdf:superconceptCUI /></c:set>
+							<li><a href="${param.target_page}?mode=concept&query=${fn:replace(fn:replace(fn:replace(param.query,'&','%26'), concept, supercui), cui, supercui)}${query_suffix}"><rdf:superconceptCUI /></a> - <rdf:superconceptPhrase />
+						</rdf:foreachSuperconcept>
+					</ol>
+				</li>
+				<li>Sub concepts:
+					<ol class="bulletedList">
+						<rdf:foreachSubconcept var="">
+							<c:set var="subcui"><rdf:subconceptCUI /></c:set>
+							<li><a href="${param.target_page}?mode=concept&query=${fn:replace(fn:replace(fn:replace(param.query,'&','%26'), concept, subcui), cui, subcui)}${query_suffix}"><rdf:subconceptCUI /></a> - <rdf:subconceptPhrase />
+						</rdf:foreachSubconcept>
+					</ol>
+				</li>
+			</ol>
 		</rdf:concept>
 	</rdf:foreachConcept>
 </ol>
