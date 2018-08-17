@@ -16,7 +16,7 @@
 <script>
 
 var width = parseInt(d3.select("#content").style("width"))-50,
-	height = width,
+	height = width/2,
     radius = 4,
     charge = -50,
     linkDistance = 30;

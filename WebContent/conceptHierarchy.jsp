@@ -20,7 +20,7 @@
 			<c:set var="concept"><rdf:conceptPhrase /></c:set>
 			<c:set var="cui"><rdf:conceptCUI /></c:set>
 			<li><a
-				href="visualSearch.jsp?query=${fn:replace(fn:replace(param.query,'&','%26'), concept, cui)}${query_suffix}"><rdf:conceptCUI /></a>
+				href="${param.target_page}?mode=concept&query=${fn:replace(fn:replace(param.query,'&','%26'), concept, cui)}${query_suffix}"><rdf:conceptCUI /></a>
 				- <rdf:conceptPhrase />
 				<ol class="bulletedList">
 					<li>Super concepts:
