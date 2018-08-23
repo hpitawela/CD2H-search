@@ -130,10 +130,11 @@
 					<c:out value="${displayString}" />
 				</h3>
 
-                <lucene:taxonomy taxonomyPath="/usr/local/CD2H/lucene/test_tax">
-                    <lucene:countFacetRequest categoryPath="Publish Date"/>
-                    <lucene:countFacetRequest categoryPath="Author"/>
- 					<lucene:search lucenePath="/usr/local/CD2H/lucene/test"
+                <lucene:taxonomy taxonomyPath="/usr/local/CD2H/lucene/facet_test_tax">
+                    <lucene:countFacetRequest categoryPath="Person"/>
+                    <lucene:countFacetRequest categoryPath="Site"/>
+                    <lucene:countFacetRequest categoryPath="CTSA"/>
+ 					<lucene:search lucenePath="/usr/local/CD2H/lucene/facet_test"
 						label="content" queryParserName="${mode}"
 						queryString="${queryString}">
 						<ol class="bulletedList">
@@ -150,6 +151,7 @@
                                         </ol>
                                        </lucene:facet></li>
 									</lucene:facetIterator>
+									<li><i>Other (?)</i></li>
 								</ol>
 								</lucene:facet></li>
 							</lucene:facetIterator>
@@ -160,7 +162,7 @@
 						</p>
 						<ol class="bulletedList">
 							<lucene:searchIterator>
-								<li><lucene:hit label="content" /></li>
+								<li><a href="<lucene:hit label="uri" />"><lucene:hit label="last_name" />, <lucene:hit label="first_name" /></a> - <lucene:hit label="title" />, <lucene:hit label="site" /></li>
 							</lucene:searchIterator>
 						</ol>
 					</lucene:search>
