@@ -47,7 +47,7 @@
 				<lucene:taxonomy taxonomyPath="/usr/local/CD2H/lucene/facet_test_tax">
 					<lucene:countFacetRequest categoryPath="Source" depth="3" />
 					<lucene:countFacetRequest categoryPath="Entity" depth="3" />
-					<lucene:countFacetRequest categoryPath="Site" />
+					<lucene:countFacetRequest categoryPath="Site" depth="3" />
 					<lucene:countFacetRequest categoryPath="CTSA" />
 
 					<c:if test="${not empty param.drillDown}">
@@ -116,10 +116,7 @@
 								<p>Result Count: <lucene:count /></p>
 								<ol class="bulletedList">
 									<lucene:searchIterator>
-										<li><a href="<lucene:hit label="uri" />"><lucene:hit
-													label="last_name" />, <lucene:hit label="first_name" /></a> -
-											<lucene:hit label="title" />, <lucene:hit label="site" /> [<lucene:hit
-												label="source" />]</li>
+										<li><a href="<lucene:hit label="uri" />"><lucene:hit label="label" /></a> [<lucene:hit label="source" />]</li>
 									</lucene:searchIterator>
 								</ol>
 							</div>
