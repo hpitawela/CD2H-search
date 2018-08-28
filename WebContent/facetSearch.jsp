@@ -41,7 +41,7 @@
 				<p />
 				<c:set var="host"><util:requestingHost /></c:set>
 				<util:Log line="" message="requesting host: ${host}" page="ctsaSearch" level="INFO"></util:Log>
-				<util:Log line="" message="query: ${displayString}"	page="ctsaSearch" level="INFO"></util:Log>
+				<util:Log line="" message="query: ${param.query}"	page="ctsaSearch" level="INFO"></util:Log>
 				<h3>Search Results:	<c:out value="${displayString}" /></h3>
 
 				<lucene:taxonomy taxonomyPath="/usr/local/CD2H/lucene/facet_test_tax">
