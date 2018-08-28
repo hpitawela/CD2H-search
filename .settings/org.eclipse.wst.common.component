@@ -12,9 +12,6 @@
         <dependent-module archiveName="LuceneTagLib-0.0.8-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/LuceneTagLib/LuceneTagLib">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="RDFTagLib-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/RDFTagLib/RDFTagLib">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
         <dependent-module archiveName="NLP-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/NLP/NLP">
             <dependency-type>uses</dependency-type>
         </dependent-module>
