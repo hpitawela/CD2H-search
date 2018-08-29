@@ -49,16 +49,12 @@
 					<lucene:countFacetRequest categoryPath="Entity" depth="3" />
 					<lucene:countFacetRequest categoryPath="Site" depth="3" />
 					<lucene:countFacetRequest categoryPath="CTSA" />
-
-					<c:if test="${not empty param.drillDown}">
-						<c:set var="drillDownList" value="" />
-						<c:forTokens items="${param.drillDown}" delims="|" var="drillDownPath">
-							<c:if test="${drillDownPath != param.drillUp }">
-								<c:set var="drillDownList" value="${drillDownList}${drillDownPath}|" />
-								<lucene:drillDownFacet categoryPath="${drillDownPath}" />
-							</c:if>
-						</c:forTokens>
-					</c:if>
+                    <lucene:countFacetRequest categoryPath="Status" />
+                    <lucene:countFacetRequest categoryPath="Phase" />
+                    <lucene:countFacetRequest categoryPath="Type" />
+                    <lucene:countFacetRequest categoryPath="Condition" />
+					
+					<c:set var="drillDownList"><lucene:drillDownProcessor categoryPaths="${param.drillDown}" drillUpCategory="${param.drillUp}" drillOutCategory="${param.drillOut}" /></c:set>
 
 					<lucene:search lucenePath="/usr/local/CD2H/lucene/facet_test" label="content" queryParserName="text" queryString="${param.query}">
 						<div style="with: 100%">
@@ -91,8 +87,10 @@
 																	<lucene:facet label="none">
 																		<c:choose>
 																			<c:when	test="${fn:contains(drillDownList, facet3path.concat('|'))}">
-																				<li><lucene:facet label="content" /> <a	href="facetSearch.jsp?query=${param.query}&drillDown=${drillDownList}&drillUp=${facet3path}">x</a>
-																			</c:when>
+																				<li><lucene:facet label="content" />
+																				<a	href="facetSearch.jsp?query=${param.query}&drillDown=${drillDownList}&drillOut=${facet3path}">&larr;</a>
+		                                                                      <a  href="facetSearch.jsp?query=${param.query}&drillDown=${drillDownList}&drillUp=${facet3path}">x</a>
+        																	</c:when>
 																			<c:when	test="${fn:contains(drillDownList, facet3path)}">
 																				<li><lucene:facet label="content" />
 																			</c:when>
