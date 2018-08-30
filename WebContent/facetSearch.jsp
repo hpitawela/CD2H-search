@@ -56,7 +56,7 @@
 					
 					<c:set var="drillDownList"><lucene:drillDownProcessor categoryPaths="${param.drillDown}" drillUpCategory="${param.drillUp}" drillOutCategory="${param.drillOut}" /></c:set>
 
-					<lucene:search lucenePath="/usr/local/CD2H/lucene/facet_test" label="content" queryParserName="text" queryString="${param.query}">
+					<lucene:search lucenePath="/usr/local/CD2H/lucene/facet_test" label="content" queryParserName="boolean" queryString="${param.query}" useConjunctionByDefault="true">
 						<div style="with: 100%">
 							<div style="width: 40%; padding: 0px 120px 0px 0px; float: left">
 								<h5>Facets:</h5>
