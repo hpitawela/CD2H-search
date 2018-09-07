@@ -35,9 +35,11 @@
 						</tr>
 					</table>
 				</form>
+				<a href="facetSearch.jsp">reset</a>
 			</div>
 			<br />
-			<c:if test="${not empty param.query}">
+			<c:choose>
+			<c:when test="${not empty param.query}">
 				<p />
 				<c:set var="host"><util:requestingHost /></c:set>
 				<util:Log line="" message="requesting host: ${host}" page="ctsaSearch" level="INFO"></util:Log>
@@ -121,7 +123,46 @@
 						</div>
 					</lucene:search>
 				</lucene:taxonomy>
-			</c:if>
+			</c:when>
+			<c:otherwise>
+				This proof-of-concept explores multi-faceted search across multiple federated sources, both internal to CD2H and the CTSA Consortium and more broadly across the entire informatics community.
+				Comments and questions are welcome! We are particularly interested in feedback regarding the nature and organization of the facets used to filter search results. The facet taxonomy is readily
+				restructured as we index data.
+				<p>
+				<h4>Sources and Entity Types</h4>
+				<ol class="bulletedList">
+					<li>ClinicalTrials.gov <i>(241,633 entries)</i>
+					<ol class="bulletedList">
+						<li>Clinical Trial
+						<li>Official Contact
+					</ol>
+					<li>CTSAsearch <i>(650,112 entries)</i>
+					<ol class="bulletedList">
+						<li>Person
+					</ol>
+					<li>DataMed.org (bioCADDIE) <i>(1,252,785 entries)</i>
+					<ol class="bulletedList">
+						<li>Data Set
+					</ol>
+					<li>GitHub <i>(1,235 entries)</i>
+					<ol class="bulletedList">
+						<li>User
+						<li>Organization
+						<li>Repository
+					</ol>
+					<li>N-Lighten <i>(66 entries)</i>
+					<ol class="bulletedList">
+						<li>User
+						<li>Organization
+						<li>Educational Resource
+					</ol>
+					<li>NIH Funding Opportunity Announcements <i>(1,220 entries)</i>
+					<ol class="bulletedList">
+						<li>FOA
+					</ol>
+				</ol>
+			</c:otherwise>
+			</c:choose>
 		</div>
 	</div>
 </body>
