@@ -51,6 +51,10 @@
 					<lucene:countFacetRequest categoryPath="Entity" depth="3" />
 					<lucene:countFacetRequest categoryPath="Site" depth="3" />
 					<lucene:countFacetRequest categoryPath="CTSA" />
+                    <lucene:countFacetRequest categoryPath="Learning Level" />
+                    <lucene:countFacetRequest categoryPath="Assessment Method" />
+                    <lucene:countFacetRequest categoryPath="Competency Domain" />
+                    <lucene:countFacetRequest categoryPath="Delivery Method" />
                     <lucene:countFacetRequest categoryPath="Status" />
                     <lucene:countFacetRequest categoryPath="Phase" />
                     <lucene:countFacetRequest categoryPath="Type" />
@@ -155,6 +159,11 @@
 						<li>User
 						<li>Organization
 						<li>Educational Resource
+					</ol>
+					<li>DIAMOND <i>(95 entries)</i>
+					<ol class="bulletedList">
+						<li>Assessment
+						<li>Training Material
 					</ol>
 					<li>NIH Funding Opportunity Announcements <i>(1,220 entries)</i>
 					<ol class="bulletedList">
