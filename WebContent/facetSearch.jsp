@@ -148,6 +148,10 @@
 					<ol class="bulletedList">
 						<li>Data Set
 					</ol>
+					<li>DataCite.org <i>(12,841,525 entries)</i>
+					<ol class="bulletedList">
+						<li>Data Set
+					</ol>
 					<li>GitHub <i>(1,235 entries)</i>
 					<ol class="bulletedList">
 						<li>User
