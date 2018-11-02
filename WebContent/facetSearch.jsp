@@ -135,12 +135,12 @@
 				<p>
 				<h4>Sources and Entity Types</h4>
 				<ol class="bulletedList">
-					<li>ClinicalTrials.gov <i>(241,633 entries)</i>
+					<li>ClinicalTrials.gov <i>(289,056 entries)</i>
 					<ol class="bulletedList">
 						<li>Clinical Trial
 						<li>Official Contact
 					</ol>
-					<li>CTSAsearch <i>(650,112 entries)</i>
+					<li>CTSAsearch <i>(238,894 entries)</i>
 					<ol class="bulletedList">
 						<li>Person
 					</ol>
@@ -148,7 +148,7 @@
 					<ol class="bulletedList">
 						<li>Data Set
 					</ol>
-					<li>DataCite.org <i>(12,841,525 entries)</i>
+					<li>DataCite.org <i>(13,325,661 entries)</i>
 					<ol class="bulletedList">
 						<li>Data Set
 					</ol>
@@ -158,7 +158,7 @@
 						<li>Organization
 						<li>Repository
 					</ol>
-					<li>N-Lighten <i>(66 entries)</i>
+					<li>N-Lighten <i>(110 entries)</i>
 					<ol class="bulletedList">
 						<li>User
 						<li>Organization
