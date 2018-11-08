@@ -41,6 +41,8 @@
 		<p>CTSAsearch is a federated search engine using Linked Open Data
 			published by members of the CTSA Consortium and other interested
 			parties. To try it out, use the form below.</p>
+			
+			<p>The CD2H faceted search prototype is available <a href="facetSearch.jsp">here.</a></p>
 
 <c:set var="displayMode" value="bar"/>
 <c:if test="${not empty param.mode}">
