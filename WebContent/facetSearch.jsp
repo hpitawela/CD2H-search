@@ -21,7 +21,7 @@
 	<jsp:include page="header.jsp" flush="true" />
 
 	<div class="container pl-0 pr-0">
-		<br /> <br /> <br /> <br /> <br />
+		<br/> <br/> <br/> <br/> <br/>
 		<div class="container-fluid">
 			<h3>Faceted Search</h3>
 			<div id=form>
