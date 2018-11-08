@@ -37,7 +37,7 @@
 				</form>
 				<a href="facetSearch.jsp">reset</a>
 			</div>
-			<br />
+			<br/>
 			<c:choose>
 			<c:when test="${not empty param.query}">
 				<p />
